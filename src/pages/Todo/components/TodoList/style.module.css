@@ -1,0 +1,94 @@
+/* /* .todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todoList li {
+  color: black;
+  font-weight: 500;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.todoDiv{
+  background: antiquewhite;
+  border-radius: 10px;
+
+}
+
+.todoListButton{
+  color: red;
+  background: none;
+} */
+
+
+.todoDiv {
+  background: antiquewhite;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ✅ cross button right side pe chala jayega */
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todoItem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoItem input {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.todoItem span {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todoListButton {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.todoListButton:hover{
+  background: red;
+  color: white;
+}
+
